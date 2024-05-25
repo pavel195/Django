@@ -1,0 +1,10 @@
+{#Шаблон  будет рендериться с контекстом, содержащим список категорий и класс меню,#}
+{#что позволяет динамически создавать меню на основе данных из базы данных.#}
+<div class="menu">
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        {% for item in categories %}
+        <li><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

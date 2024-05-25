@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'test/style_5.css'%}">
+</head>
+<body>
+    <form>
+        <p>Логин:</p>
+        <input>
+        <p>Пароль:</p>
+        <input>
+        <input class="kal" type="checkbox">
+        <button>Вход</button>
+    </form>
+    <form class="task2cont">
+        <div class="task2a">
+            <input class="task2">
+            <p>Введите имя</p>
+        </div>
+        <div class="task2a">
+            <input class="task2">
+            <p>Почта</p>
+        </div>
+        <textarea  class="task2b" style="resize: both;"></textarea>
+        <button class="task2">Оставить коментарий</button>
+    </form>
+    <form>
+        <select multiple>
+            <option>АС ЭТРАН</option>
+            <option>ЕАСАПР</option>
+            <option>АСУФР</option>
+        </select>
+        <select>
+            <option>ЕАСАПР</option>
+            <option>ЕАСД</option>
+            <option>АСУМР</option>
+            <option>АСУСТ</option>
+        </select>
+    </form>
+    <form class="task3cont">
+        <p>Тип ПО:</p>
+        <div class="task3">
+            <input type="radio">
+            <p>АС</p>
+        </div>
+         <div class="task3">
+            <input type="radio">
+             <p>АРМ</p>
+        </div>
+        <p>Прикрепить файл:</p>
+        <div class="task3">
+            <input type="file">
+        </div>
+        <div class="task3">
+            <input type="checkbox">
+            <p>АСУ ТО</p>
+        </div>
+        <div class="task3">
+            <input type="checkbox">
+            <p>АРМ ППД</p>
+        </div>
+        <div class="task3">
+            <input type="checkbox">
+            <p>АС СПФ</p>
+        </div>
+        <div class="task3">
+            <input type="checkbox">
+            <p>АСОВ</p>
+        </div>
+        <div class="task3">
+            <button>ОК</button>
+            <button>Сбросить</button>
+        </div>
+    </form>
+    <form class="nofat">
+        <fieldset>
+            <legend>О системе:</legend>
+            <div class="task3">
+                <input type="radio">
+                <p>АС</p>
+            </div>
+            <div class="task3">
+                <input type="radio">
+                <p>АРМ</p>
+            </div>
+            <div class="task2a">
+                <input class="task2">
+                <p>Краткое наименование</p>
+            </div>
+            <div class="task2a">
+                <input class="task2">
+                <p>Категория</p>
+            </div>
+            <div class="task2a">
+                <input class="task2">
+                <p>Заказчик</p>
+            </div>
+            <div class="task2a">
+                <input class="task2">
+                <p>Разработчик</p>
+            </div>
+            <button>Сохранить</button>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Работа со временем</legend>
+            <div class="task3">
+                <input type="checkbox">
+                <p>Создание пунктуальности (никогда не будете опаздывать)</p>
+            </div>
+            <div class="task3">
+                <input type="checkbox">
+                <p>Излечение от пунктуальности (никогда не будете торопиться)</p>
+            </div>
+            <div class="task3">
+                <input type="checkbox">
+                <p>Изменение восприятия времени и часов</p>
+            </div>
+            <button>Отправить</button>
+        </fieldset>
+    </form>
+
+    <form class="form5">
+        <h2>Разработка сайтов</h2>
+        <p><b>Тип сайта:</b></p>
+        <select>
+            <option>Интернет магазин + Форум</option>
+        </select>
+        <p><b>Тип сайта:</b></p>
+        <div class="raidomenu">
+            <div class="task3">
+                <input type="radio">
+                <p>Junior</p>
+            </div>
+            <div class="task3">
+                <input type="radio">
+                <p>Middle</p>
+            </div>
+            <div class="task3">
+                <input type="radio">
+                <p>Senior</p>
+            </div>
+        </div>
+        <p><b>Дополнительные услуги:</b></p>
+        <div class="task3">
+            <input type="checkbox">
+            <p>Поисковая оптимизация</p>
+        </div>
+        <div class="task3">
+            <input type="checkbox">
+            <p>Постраничная оптимизация</p>
+        </div>
+        <p style="width: 300px;"><b>Дата и время встречи с разработчиком:</b></p>
+        <input type="datetime-local">
+        <fieldset class="test">
+            <legend>Контактная информация</legend>
+            <p><b>Ваше имя:</b></p>
+            <input placeholder="введите ваше имя">
+            <p><b>Ваш телефон:</b></p>
+            <input placeholder="например, +7 800 123-45-67">
+        </fieldset>
+        <button style="width: 330px;">Записаться</button>
+    </form>
+
+
+
+    <form class="task7">
+        <p class="task7_title">Регистрация</p>
+        <div class="task7_select">
+            <div class="task7_select_option">
+                <input class="task7_radio" type="checkbox" id="radio1" name="radios">
+                <label for="radio1">Физ.лицо</label>
+            </div>
+            <div class="task7_select_option">
+                <input class="task7_radio" type="checkbox" id="radio2" name="radios">
+                <label for="radio2">Компания</label>
+            </div>
+        </div>
+        <div class="task7_input">
+            <div class="task7_pic_cont"><img src="{% static 'img/convert.png' %}"></div>
+
+            <input class="task7_input_input" placeholder="Почта">
+        </div>
+        <div class="task7_input">
+            <div class="task7_pic_cont"><img src="{% static 'img/man.png' %}"></div>
+
+            <input class="task7_input_input" placeholder="Имя">
+        </div>
+        <div class="task7_input">
+            <div class="task7_pic_cont">
+                <img src="{% static 'img/lock.png' %}">
+            </div>
+            <input class="task7_input_input" placeholder="Пароль">
+        </div>
+        <div class="task7_select">
+            <div class="task7_select_option">
+                <input class="task7_radio" type="checkbox" id="radio3" name="radios">
+                <label for="radio3">М</label>
+            </div>
+            <div class="task7_select_option">
+                <input class="task7_radio" type="checkbox" id="radio4" name="radios">
+                <label for="radio4">Ж</label>
+            </div>
+        </div>
+        <p class="task7_ok">
+            Отправляя, вы соглашаетесь с правилами на django.fun .
+        </p>
+        <button class="task7_button">Отправить</button>
+    </form>
+
+
+
+    <form class="task8">
+        <div class="task8_input_cont">
+            <div class="task8_input">
+                <div class="task8_pic_cont">
+                    <img src="{% static 'img/man_grey.png' %}">
+                </div>
+                <input class="task8_input_input" placeholder="Имя">
+            </div>
+                        <div class="task8_input">
+                <div class="task8_pic_cont">
+                    <img src="{% static 'img/convert_grey.png' %}">
+                </div>
+                <input class="task8_input_input" placeholder="Почта">
+            </div>
+                        <div class="task8_input">
+                <div class="task8_pic_cont">
+                    <img src="{% static 'img/age_grey.png' %}">
+                </div>
+                <input class="task8_input_input" placeholder="Возраст">
+            </div>
+                        <div class="task8_input">
+                <div class="task8_pic_cont">
+                    <img src="{% static 'img/phone_grey.png' %}">
+                </div>
+                <input class="task8_input_input" placeholder="Телефон">
+            </div>
+        </div>
+
+
+        <div class="task8_select">
+            <p>Оцените сайт</p>
+            <div class="task8_select_option">
+                <input class="task8_radio" type="checkbox" id="radio5" name="radios">
+                <label for="radio5">Суперотлично</label>
+            </div>
+            <div class="task8_select_option">
+                <input class="task8_radio" type="checkbox" id="radio6" name="radios">
+                <label for="radio6">Отлично</label>
+            </div>
+            <div class="task8_select_option">
+                <input class="task8_radio" type="checkbox" id="radio7" name="radios">
+                <label for="radio7">Хорошо</label>
+            </div>
+            <div class="task8_select_option">
+                <input class="task8_radio" type="checkbox" id="radio8" name="radios">
+                <label for="radio8">Удовлетворительно</label>
+            </div>
+            <div class="task8_select_option">
+                <input class="task8_radio" type="checkbox" id="radio9" name="radios">
+                <label for="radio9">Неудовлетворительно</label>
+            </div>
+            <p class="task8_pls">Пожалуйста, оставьте коментарий к вашему рейтингу</p>
+            <textarea class="task8_textarea"></textarea>
+            <button class="task8_button">Отправить</button>
+        </div>
+
+
+    </form>
+
+</body>
+</html>

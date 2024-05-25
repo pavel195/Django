@@ -1,0 +1,315 @@
+.kal::after {
+    margin-left: 20px;
+    content: "Запомнить";
+}
+.kal {
+    display: block;
+}
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.task2 {
+    width: 200px;
+}
+.task2cont {
+    margin: 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.task2b {
+    width: 400px;
+    height: 200px;
+}
+.task2a {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.task3cont {
+    margin: 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task3 {
+    display: flex;
+    flex-direction: row;
+}
+.nofat {
+    width: 600px;
+}
+.test {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.raidomenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form5 {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.task7 {
+    margin: 50px 0 50px 0;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5),
+              0 -5px 5px -5px rgba(0, 0, 0, 0.5),
+              5px 0 5px -5px rgba(0, 0, 0, 0.5),
+              -5px 0 5px -5px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Helvetica;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.task7_title {
+    font-size: 20px;
+    font-weight: 100;
+    color: #888888;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.task7_select {
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.task7_select_option {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.task7_radio {
+  display: none;
+}
+
+/* Создаем кастомные кружки */
+.task7_radio + label {
+  position: relative;
+  padding-left: 25px; /* Расстояние между кружком и текстом */
+  cursor: pointer;
+}
+
+/* Стили для неактивного кружка */
+.task7_radio + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px; /* Диаметр кружка */
+  height: 18px; /* Диаметр кружка */
+  border-radius: 50%; /* Круглая форма */
+  border: none; /* Цвет рамки */
+  background-color: green; /* Цвет кружка */
+}
+
+/* Стили для активного кружка */
+.task7_radio:checked + label::before {
+  content: '\2713'; /* Юникод для галочки */
+  color: white; /* Цвет галочки */
+  background-color: green; /* Цвет кружка */
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.task7_input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #999999;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.task7_pic_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #c91c1c;
+}
+
+.task7_input_input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-decoration: none;
+}
+
+.task7_ok {
+    font-size: 8px;
+}
+.task7_button {
+    width: 240px;
+    height: 30px;
+    background-color: #1c87c9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+input {
+    outline: none;
+}
+
+.task8_input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 400px;
+}
+.task8_pic_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #666666;
+}
+
+.task8_input_input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-decoration: none;
+}
+
+.task8_input_cont {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.task8 {
+    margin: 50px 0 50px 0;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    max-width: 1000px;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5),
+              0 -5px 5px -5px rgba(0, 0, 0, 0.5),
+              5px 0 5px -5px rgba(0, 0, 0, 0.5),
+              -5px 0 5px -5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica;
+}
+
+
+
+.task8_radio {
+  display: none;
+}
+
+/* Создаем кастомные кружки */
+.task8_radio + label {
+  position: relative;
+  padding-left: 25px; /* Расстояние между кружком и текстом */
+  cursor: pointer;
+}
+
+/* Стили для неактивного кружка */
+.task8_radio + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px; /* Диаметр кружка */
+  height: 15px; /* Диаметр кружка */
+  border-radius: 50%; /* Круглая форма */
+  background-color: green; /* Цвет кружка */
+  border: 2px solid green; /* Цвет рамки */
+}
+
+/* Стили для активного кружка */
+.task8_radio:checked + label::before {
+  content: '\2713'; /* Юникод для галочки */
+  color: green; /* Цвет галочки */
+  background-color: white; /* Цвет кружка */
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+}
+.task8_select {
+    margin: auto;
+    width: 900px;
+
+}
+
+.task8_select_option {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.task8_pls {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.task8_textarea {
+    width: 100%;
+    padding: 0;
+}
+
+.task8_button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: green;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}

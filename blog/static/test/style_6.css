@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+.task1_table {
+    width: 100vw;
+    border-collapse: collapse;
+}
+.task1_upper_caption {
+    background-color: #FF0000;
+    border: 1px solid #000000;
+}
+.task1_bottom_caption {
+    background-color: #FFFF00;
+    caption-side: bottom;
+    border: 1px solid #000000;
+}
+.task1_title1 {
+    text-align: center;
+    background-color: #00FF00;
+}
+.task1_title2 {
+    text-align: center;
+    background-color: #0000FF;
+}
+.border_yes {
+    border: 1px solid #000000;
+}
+.task23_container {
+    width: 750px;
+}
+.task23_upper {
+    background-color: #900000;
+    height: 80px;
+}
+.task23_bottom {
+    background-color:  #444444;
+    height: 40px;
+    color: #FFFFFF;
+}
+.task23_middle {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+}
+.task23_menu {
+    background-color: #008080;
+    width: 20%;
+    color: #FFFFFF;
+}
+.task23_content {
+    background-color:  #E0E0E0;
+    width: 80%
+}
+.task3_container {
+    width: 100vw;
+}
+.task4_container {
+    display: flex;
+    gap: 5px;
+}
+.task4_block {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.task4_block_title {
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.task4_block_text {
+    flex: 1;
+    border: 1px solid #000000;
+}
+.task4_brown {
+    background-color: #B38541;
+}
+.task4_green {
+    background-color: #008159;
+}
+.task4_blue {
+    background-color: #006077;
+}
+.task4_light_brown {
+    background-color: #EBE0C5;
+}
+.task4_light_green {
+    background-color: #BBE1C4;
+}
+.task4_light_blue {
+    background-color: #ADD0D9;
+}
+
+.task1_table {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.task23_container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.task3_container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.task4_container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

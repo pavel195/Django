@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'create_category' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Создать записи</button>
+</form>
+
+
+<form action="{% url 'show_all_categories' %}" method="get">
+    {% csrf_token %}
+    <button type="submit">Показать записи</button>
+</form>
+
+
+<form action="{% url 'clear_categories' %}" method="delete">
+    {% csrf_token %}
+    <button type="submit">Удалить записи</button>
+</form>
+
+
+<form action="{% url 'edit_category' %}" method="delete">
+    {% csrf_token %}
+    <button type="submit">Изменить записи</button>
+</form>
+
+</body>
+</html>

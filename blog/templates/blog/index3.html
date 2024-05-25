@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'test/style_1.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'test/style_3.css'%}">
+    <style>
+        @import url("{% static 'test/style_2.css'%}");
+    </style>
+</head>
+<body>
+<p class="red">Django(Джанго) - свободный фреймворк для веб-приложений на языке Python, использующий шаблон проектирования MVC. Документация на русском языке</p>
+<span id="blue">Python - это простой в освоении мощный язык программирования.</span>
+<p class="red2">SQLAlchemy - это набор инструментов набор инструментов набор инструментов набор инструментов набор инструментов набор инструментов набор инструментов</p>
+<span class="blue2">Синий span</span>
+<span class="green">Зеленый span</span>
+
+<p class="p_1">
+    <span class="p_2">Первое предложение абзаца.</span>
+    Второе более длинное предложение абзаца.
+    Третье и последнее предложение абзаца.
+</p>
+<p class="p_3">
+    <span class="p_4">Первое предложение абзаца.</span>
+    Второе более длинное предложение абзаца.
+    Третье и последнее предложение абзаца.
+</p>
+
+
+<p class="p_5">
+    <span class="p_6">Первое предложение абзаца.</span>
+    Второе более длинное предложение абзаца.
+    Третье и последнее предложение абзаца.
+</p>
+<p class="p_7">
+    <span class="p_8">Первое предложение абзаца.</span>
+    Второе более длинное предложение абзаца.
+    Третье и последнее предложение абзаца.
+</p>
+
+
+<ul class="list1">
+    <li>Маркеры размещаем вне списка</li>
+    <li>Используем вид маркера decimal</li>
+</ul>
+
+<ol class="list2">
+    <li>Маркеры размещаем вне списка</li>
+    <li>Используем вид маркера square</li>
+</ol>
+
+
+<table class="table1">
+    <caption>Таблица №1</caption>
+    <tr>
+        <td>ячейка 1.1</td>
+        <td>ячейка 1.2</td>
+    </tr>
+    <tr>
+        <td>ячейка 2.1</td>
+        <td>ячейка 2.2</td>
+    </tr>
+</table>
+
+
+<table class="table2">
+    <caption>Таблица №1</caption>
+    <tr>
+        <td>ячейка 1.1</td>
+        <td>ячейка 1.2</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>ячейка 2.2</td>
+    </tr>
+</table>
+
+
+<p class="last1">Ширина абзаца равна 400px, высота-10 &ndash; от высоты области просмотра окна браузера.</p>
+
+<p class="last2">Ширина абзаца будет 400px, тк width меньше min-width,а высота - 100px тк height превышает max-height</p>
+
+</body>
+</html>

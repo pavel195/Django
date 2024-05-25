@@ -1,0 +1,102 @@
+.task1::first-letter {
+    font-style: italic;
+    font-size: 25px;
+    color: #FF0000;
+}
+
+.task2::first-line {
+    font-style: italic;
+    font-size: 25px;
+    color: #FF0000;
+}
+.task3::selection {
+    color: #FF0000;
+    background-color: #00FF00;
+}
+
+.task4 {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #FFFFFF;
+    color: #00FF00
+}
+
+.task4:focus {
+    background-color: #00FF00;
+    color: #FFFFFF;
+    height: 100px;
+    width: 200px;
+    border: 2px solid #FF0000
+}
+.task6::before {
+    color: #FF0000;
+    content: "Начало. ";
+}
+
+.task6::after {
+    color: #FF0000;
+    content: " Конец.";
+}
+
+.container {
+	counter-reset: test;
+	margin-bottom: 100px;
+}
+.task8::before {
+	counter-increment: test;
+	content: "Абзац " counter(test) ". ";
+}
+
+.container2 {
+	counter-reset: test;
+}
+
+.task9::before {
+	counter-increment: test;
+	content: "Абзац " counter(test) ". ";
+	color: #00FF00;
+}
+
+.task9:nth-child(5n) {
+  color: #FF0000;
+}
+
+.container2 .task9:nth-child(5n) {
+  counter-reset: test 0;
+}
+
+
+
+.task10 {
+        list-style: none;
+        padding: 0;
+}
+
+.task10 li:nth-child(odd) {
+        color: #FF0000;
+}
+
+.task10 li:nth-child(even) {
+        color: #FFFF00;
+}
+
+
+
+
+
+.task101 {
+        list-style: none;
+        padding: 0;
+}
+
+.task101 li:nth-child(odd) {
+        color: #0000FF;
+}
+
+.task101 li:nth-child(even) {
+        color: #00FF00;
+}
